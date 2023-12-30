@@ -21,7 +21,7 @@ services:
       # change this to the directory containing the Dockerfile.dev if in a different place
       context: .
       # the Dockerfile.dev to be run
-      dockerfile: ../../arman-solutions/django-challenge/compose/develop/django/Dockerfile
+      dockerfile: ./compose/develop/django/Dockerfile
 
     # backend-dev the exposed port from the underlying service to a port exposed to the outside
     # in this case backend-dev port 8000 exposed by manage.py runserver to also 8000

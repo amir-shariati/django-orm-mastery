@@ -11,10 +11,6 @@ services:
     build:
       context: . 
       dockerfile: ./compose/develop/django/Dockerfile
-
-    # backend-dev the exposed port from the underlying service to a port exposed to the outside
-    # in this case backend-dev port 8000 exposed by manage.py runserver to also 8000
-    # to be used to access the container from the outside
     ports:
       - '8000:8000'
 

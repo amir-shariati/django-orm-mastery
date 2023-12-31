@@ -5,8 +5,6 @@ version: '3.7'
 services:
 
   web-dev:
-
-#    image: backend-dev:1.0.0
     image: dj-orm-web-dev
 
     # service 1 container name

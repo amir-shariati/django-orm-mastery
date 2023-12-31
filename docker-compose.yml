@@ -7,7 +7,6 @@ services:
   web-dev:
     image: dj-orm-web-dev
     container_name: dj-orm-web-dev-cnt
-
     env_file: .env/.env.dev
 
     build:

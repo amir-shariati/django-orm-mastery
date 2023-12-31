@@ -6,8 +6,6 @@ services:
 
   web-dev:
     image: dj-orm-web-dev
-
-    # service 1 container name
     container_name: dj-orm-web-dev-cnt
 
     env_file: .env/.env.dev

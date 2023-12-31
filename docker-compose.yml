@@ -34,6 +34,22 @@ services:
       - POSTGRES_DB=hello_django_dev
     networks:
       - dj-orm-net-dev
+  
+  pgadmin:
+    container_name: dj-orm-pga_ctn
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-admin@admin.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-1234}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin-v:/var/lib/pgadmin
+      - pgadmin-backup-sql:/home/pgadmin/
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - dj-orm-net-dev
+    restart: unless-stopped
 
   redis:
     image: redis:7-alpine

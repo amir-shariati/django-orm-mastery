@@ -4,7 +4,6 @@ version: '3.7'
 
 services:
 
-  # service 1 named backend-dev
   web-dev:
 
 #    image: backend-dev:1.0.0

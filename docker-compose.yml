@@ -1,8 +1,7 @@
 #the docker compose file version
 version: '3.7'
 
-# you can run multiple services inside one docker compose file
-# define them with their dependencies one after the other
+
 services:
 
   # service 1 named backend-dev

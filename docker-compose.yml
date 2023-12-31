@@ -13,8 +13,6 @@ services:
       dockerfile: ./compose/develop/django/Dockerfile
     ports:
       - '8000:8000'
-
-    # the mounted volumes (folders which are outside docker but being used by docker)
     volumes:
       - '.:/app'
 

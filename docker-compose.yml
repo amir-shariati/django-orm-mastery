@@ -8,7 +8,6 @@ services:
     image: dj-orm-web-dev
     container_name: dj-orm-web-dev-cnt
     env_file: .env/.env.dev
-
     build:
       # the context (working directory) is the current directory
       # change this to the directory containing the Dockerfile.dev if in a different place

@@ -10,7 +10,7 @@ class Product(models.Model):
 
 
 class Brand(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, verbose_name='Brand name')
 
     def __str__(self):
         return self.name
